@@ -1,0 +1,11 @@
+name: Deploy
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+      - 'HOTFIX-*'
+jobs:
+  build_and_deploy:
+    uses: scoperetail-io/marvel-github-workflows/.github/workflows/maven-deploy.yaml@master
+    secrets: inherit

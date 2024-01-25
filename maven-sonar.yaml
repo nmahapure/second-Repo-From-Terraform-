@@ -1,0 +1,8 @@
+name: Sonar Scan
+
+on: [pull_request]
+
+jobs:
+  sonar-scan:
+    uses: scoperetail-io/marvel-github-workflows/.github/workflows/maven-sonar.yaml@master
+    secrets: inherit
